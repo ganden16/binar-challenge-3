@@ -1,0 +1,82 @@
+[
+	{
+		"img": "img/avatar.png",
+		"rating": 5,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Alvin Ardi",
+		"age": 21,
+		"city": "Sidoarjo"
+	},
+	{
+		"img": "img/avatar2.png",
+		"rating": 4,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Safira",
+		"age": 22,
+		"city": "Surabaya"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp",
+		"rating": 3,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Yanti",
+		"age": 23,
+		"city": "Gresik"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp",
+		"rating": 5,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Yana",
+		"age": 24,
+		"city": "Lamongan"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp",
+		"rating": 4,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Yanto",
+		"age": 25,
+		"city": "Tuban"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp",
+		"rating": 3,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Diana",
+		"age": 26,
+		"city": "Bojonegoro"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp",
+		"rating": 5,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Melissa",
+		"age": 27,
+		"city": "Ngawi"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp",
+		"rating": 3,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Ruby",
+		"age": 28,
+		"city": "Madiun"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp",
+		"rating": 5,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Vexana",
+		"age": 29,
+		"city": "Nganjuk"
+	},
+	{
+		"img": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp",
+		"rating": 4,
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore atque culpa explicabo reiciendis repellendus quibusdam harum ratione doloremque repellat eaque consequuntur doloribus quaerat libero enim accusamus reprehenderit, nam laudantium minus!",
+		"name": "Achmad",
+		"age": 30,
+		"city": "Kediri"
+	}
+]

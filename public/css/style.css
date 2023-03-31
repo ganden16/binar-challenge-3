@@ -1,0 +1,269 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 14px;
+}
+select ul li option{
+	border-radius: 0;
+	background-color: #0D28A6;
+}
+body {
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+header {
+	height: 100vh;
+}
+
+.position {
+	position: absolute;
+	bottom: 0;
+}
+
+.abu-abu {
+	background: #F1F3FF;
+}
+
+.biru {
+	background-color: #0D28A6;
+}
+
+.btn-primary {
+	width: 100px;
+	height: 34px;
+	background: #0D28A6;
+}
+
+.btn-success {
+	background-color: #5CB85F;
+}
+
+.btn {
+	border-style: none;
+	border-radius: 3px;
+}
+
+.scale:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.scale2:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.svg-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.sidenav {
+	display: none;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 111111;
+	top: 0;
+	right: 0;
+	background-color: #FFFF;
+	overflow-x: hidden;
+	padding-top: 30px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 14px;
+	color: black;
+	display: block;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 1;
+	right: 25px;
+	font-size: 40px;
+	margin-left: 50px;
+	color: black;
+	font-weight: 2oo;
+}
+
+.gallery-cell {
+	width: 50%;
+	height: 250px;
+	margin-right: 32px;
+	background: #F1F3FF;
+}
+
+.gallery-cell:before {
+	display: block;
+	text-align: center;
+	line-height: 200px;
+	font-size: 80px;
+	color: white;
+}
+
+.flickity-button {
+	position: static;
+}
+
+.flickity-prev-next-button {
+	background-color: white;
+	border: 1px solid #C4C4C4;
+	position: static;
+	margin-top: 56px;
+	margin-right: 20px;
+	display: inline;
+	width: 32px;
+	height: 32px;
+
+}
+
+.flickity-prev-next-button.previous {
+	margin-left: 47%;
+}
+
+.flickity-prev-next-button:hover {
+	width: 35px;
+	height: 35px;
+	outline-style: auto;
+	outline-color: green;
+}
+
+.flickity-prev-next-button.next:active,
+.flickity-prev-next-button.previous:active {
+	background-color: green;
+	color: white;
+}
+
+.flickity-page-dots {
+	display: none;
+}
+
+#form-cars {
+	z-index: 2;
+	top: -50px;
+}
+
+.fi-clock {
+	background-image: url('../img/fi_clock.svg');
+	background-size: 18px auto;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+	background-image: url('../img/fi_calendar.svg');
+	background-size: 18px auto;
+}
+
+.fi-users {
+	background-image: url('../img/fi_users.svg');
+	background-repeat: no-repeat;
+	background-size: 18px auto;
+	background-position: right;
+	background-position-x: 95%;
+}
+
+.fi-calendar {
+	background-image: url('../img/fi_calendar.svg');
+	background-repeat: no-repeat;
+	background-size: 18px auto;
+	background-position: right;
+	background-position-x: 95%;
+}
+
+#focus-form {
+	display: none;
+	background: rgba(0, 0, 0, .6);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.input {
+	width: 180px;
+	height: 31px;
+}
+
+.input[name="jumlahPenumpang"] {
+	width: 200px;
+	font-size: small;
+}
+
+.input:focus {
+	border-color: #5CB85F;
+	border-width: 2px;
+}
+
+#btn-pilih-mobil {
+	position: absolute;
+	bottom: 24px;
+	width: 88%;
+}
+
+button[role="right-icon"] {
+	display: none;
+}
+
+.gj-picker-bootstrap table tr td.gj-cursor-pointer div:hover {
+	background: #5CB85F;
+}
+
+@media screen and (max-width: 576px) {
+	header {
+		height: auto;
+	}
+
+	.position {
+		position: static;
+	}
+
+	#focus-sidenav {
+		display: none;
+		background: rgba(0, 0, 0, .6);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 9;
+	}
+
+	.gallery-cell {
+		width: 95%;
+		height: fit-content;
+	}
+
+	.flickity-prev-next-button {
+		margin-top: 40px;
+	}
+
+	.flickity-prev-next-button.previous {
+		margin-left: 39%;
+	}
+
+	.input {
+		width: 100%;
+	}
+
+	.input[name="jumlahPenumpang"] {
+		width: 100%;
+	}
+}

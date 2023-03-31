@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+	
+	<link rel="stylesheet" href="/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div id="focus-sidenav"></div>
+
+	<div class="container-fluid p-0">
+		
+		<header id="header" class="abu-abu pt-3">
+			<div class="row mb-5 ps-sm-5 px-3">
+				<div class="col">
+					<nav id="nav-satu" class="d-sm-flex justify-content-sm-between d-none pt-3 pe-5">
+						<a href="#footer" class="btn btn-primary scale mt-1"></a>
+						<div class="d-flex">
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="#our-services">Our Services</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="#why-us">Why Us</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="#testimonial">Testimonial</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="#faq">FAQ</a>
+							<a href="#" class="btn btn-success scale">Register</a>
+						</div>
+					</nav>
+					<nav id="nav-dua" class="pt-3 ps-2 d-flex justify-content-between d-sm-none"> 
+						<div>
+							<a href="#footer" class="btn btn-primary mt-1"></a>
+						</div>
+						<div>
+							<div id="mySidenav" class="sidenav">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								<a href="#" class="fw-bold fs-3">BCR</a>
+								<a href="#our-services">Our Service</a>
+								<a href="#why-us">Why Us</a>
+								<a href="#testimonial">Testimonial</a>
+								<a href="#faq">FAQ</a>
+								<a href="#register" class="d-inline-block btn btn-success p-2 ms-4 mt-3 text-white ">Register</a>
+							 </div>
+							 <div class="d-inline pt-5">
+								<div class="container-fluid d-inline px-1 " style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+							 </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row ps-sm-5 ps-4 position">
+				<div class="col-md-6">
+					<h1 class="fw-bolder mb-5">Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</h1>
+					<div class="col-9">
+						<p>
+							Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhan untuk sewa mobil selama 24 jam.
+						</p>
+					</div>
+					<a href="/cars" class="btn btn-success fw-bold text-white scale mb-5">Mulai Sewa Mobil</a>
+				</div>
+				<div class="col-md-6">
+					<img class="scale img-fluid" src="img/car.png" alt="car">
+				</div>
+			</div>
+		</header>
+
+		<section id="our-services" class="pt-5 mt-5">
+			<div class="row justify-content-center ps-sm-5">
+				<div class="col-sm-6 mb-4 mt-5 d-flex justify-content-center">
+					<img class="scale d-inline-block ps-3 w-75" src="img/service.png">
+				</div>
+				<div class="col-md-5 ps-sm-0 ps-5 pe-5 mt-5">
+					<h2 class="fw-bold">
+						Best Car Rental for any kind of trip in (Lokasimu)!
+					</h2>
+					<p class="pt-4">
+						Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+					</p>
+					<ul type="none" style="margin-left: -32px;">
+						<% services.forEach(data => { %>
+							<li class="pb-3">
+								<img src="img/list.png"class="d-inline pe-2"> 
+								<span><%= data.desc %></span>
+							</li>
+						<% }) %>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section id="why-us" class="pt-5 mt-5">
+			<div class="row text-sm-start text-center ps-sm-5 ms-sm-5">
+				<h2 class="fw-bold">Why Us?</h2>
+				<p>Mengapa harus pilih Binar Car Rental?</p>
+			</div>
+			<div class="row mt-3 px-5 ms-sm-5">
+				<% whyUs.forEach(data => { %>
+					<div class="col-md-3 pb-4">
+						<div class="card px-3 pt-3 scale">
+							<div class="ps-3">
+								<img class="svg-icon" src="<%= data.icon %>" alt="<%= data.alt %>">
+							</div>
+							<div class="card-body">
+								<h3 class="card-title fw-bold"><%= data.title %></h3>
+								<p class="card-text"><%= data.desc %></p>
+							</div>
+						 </div>
+					</div>
+				<% }) %>
+			</div>
+		</section>
+	
+		<section id="testimonial" class="pt-5 mt-5">
+			<div class="row">
+				<h2 class="fw-bold text-center">Testimonial</h2>
+				<p class="text-center">Berbagai review positif dari pelanggan kami</p>
+			</div>
+			<div class="row mt-2 d-flex justify-content-center px-3 px-sm-0">
+				<div class="gallery js-flickity" data-flickity-options='{"wrapAround": true }'>
+					<% testimonial.forEach(data => { %>
+						<div class="gallery-cell rounded-3">
+							<div class="row px-4 py-5 p-sm-5">
+								<div class="col-md-3 pb-4 pb-sm-0 d-flex justify-content-center d-sm-flex align-items-sm-center">
+									<img class="rounded-circle" src="<%= data.img %> " alt="img" style="width: 80px; height: 80px;">
+								</div>
+								<div class="col-md-9 px-4">
+									<div class="d-flex justify-content-center d-sm-inline">
+										<% for( let i = 0; i < data.rating; i++ ) { %>
+											<img src="img/star1.png">
+										<% } %>
+									</div>
+									<p class="mt-2"><%= data.desc %></p>
+									<p class="fw-medium"><%= data.name %> <%= data.age %>, <%= data.city %></p>
+								</div>
+							</div>
+						</div>
+					<% }) %>
+				</div>
+			</div>
+		</section>
+
+		<section id="sewa-mobil" class="pt-5 mt-5">
+			<div class="row d-flex justify-content-center px-4">
+				<div class="col-md-10 biru p-sm-5 p-4 text-white rounded-4 mt-5">
+					<h1 class="fw-bold text-center w-100">
+						Sewa Mobil di (Lokasimu) Sekarang
+					</h1>
+					<p class="mt-5 text-center w-50 mx-auto">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia pariatur consequuntur eius reiciendis facere porro est sed? Quas ut sint reiciendis maiores, eaque nesciunt eligendi?
+					</p>
+					<div class="d-flex justify-content-center my-5 mb-sm-0">
+						<a href="/cars" type="button" class="btn btn-success text-white scale">Mulai Sewa Mobil</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="pt-5 mt-5">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-5">
+					<h2 class="fw-bold ps-5">
+						Frequently Asked Question
+					</h2>
+					<p class="ps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+				</div>
+				<div class="col-md-6 px-4">
+					<div class="accordion" id="accordionExample">
+						<% faq.forEach((data,index) => { %>
+							<div class="accordion-item border border-1 overflow-hidden scale rounded-2 mb-3">
+								<h2 class="accordion-header" id="heading<%= index %>">
+								  <a class="accordion-button collapsed text-decoration-none bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index %>" aria-expanded="false" aria-controls="collapse<%= index %>" style="font-size: 14px;">
+										<%= data.title %> 
+								  </a>
+								</h2>
+								<div id="collapse<%= index %>" class="accordion-collapse collapse" aria-labelledby="heading<%= index %>" data-bs-parent="#accordionExample">
+								  <div class="accordion-body">
+										<%= data.desc %>
+								  </div>
+								</div>
+							 </div>
+					  <% }) %>
+				 </div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="pt-5 mt-5">
+			<div class="row ps-4 px-sm-5 mx-sm-5">
+				<div class="col-md-4 pb-3">
+					<p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+					<p>binarcarrental@gmail.com</p>
+					<p>081-233-334-808</p>
+				</div>
+				<div class="col-md-2 pb-3">
+					<a class="text-decoration-none text-dark" href="#our-services">
+						<p class="d-block pb-1 scale">Our Services</p>
+					</a> 
+					<a href="#why-us" class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">Why Us</p>
+					</a> 
+					<a href="#testimonial" class="text-decoration-none text-dark"class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">Testimonial</p>
+					</a> 
+					<a href="#faq" class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">FAQ</p>
+					</a> 
+				</div>
+				<div class="col-md-4 pb-3">
+					<p>Connect With Us</p>
+					<a href="#" class="pe-3"><img class="scale2" src="img/fb.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/ig.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/twitter.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/mail.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/twitch.svg" alt=""></a>
+				</div>
+				<div class="col-md-2 pb-3">
+					<p>Copyright Binar 2022</p>
+					<a href="#header" class="btn btn-primary scale"></a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	
+	<script src="scripts/script.js"></script>
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+	<script src="/bootstrap.bundle.js"></script>
+</body>
+</html>

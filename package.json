@@ -1,0 +1,21 @@
+{
+  "name": "binar-fsw-challenge-03",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "index.js",
+  "author": "Achmad Alvin Ardiansyah",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}

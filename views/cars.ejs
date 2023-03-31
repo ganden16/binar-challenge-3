@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cars</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+	<link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+	
+	<div id="focus-sidenav"></div>
+
+	<div id="focus-form"></div>
+
+	<div class="container-fluid p-0">
+		
+		<header id="header" class="abu-abu pt-3">
+			<div class="row mb-5 ps-sm-5 px-3">
+				<div class="col">
+					<nav id="nav-satu" class="d-sm-flex justify-content-sm-between d-none pt-3 pe-5">
+						<a href="#footer" class="btn btn-primary scale mt-1"></a>
+						<div class="d-flex">
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="/#our-services">Our Services</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="/#why-us">Why Us</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="/#testimonial">Testimonial</a>
+							<a class="text-decoration-none text-dark px-3 pt-2 scale2" href="/#faq">FAQ</a>
+							<a href="#" class="btn btn-success scale">Register</a>
+						</div>
+					</nav>
+					<nav id="nav-dua" class="pt-3 ps-2 d-flex justify-content-between d-sm-none"> 
+						<div>
+							<a href="#footer" class="btn btn-primary mt-1"></a>
+						</div>
+						<div>
+							<div id="mySidenav" class="sidenav">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								<a href="/" class="fw-bold fs-3">BCR</a>
+								<a href="/#our-services">Our Service</a>
+								<a href="/#why-us">Why Us</a>
+								<a href="/#testimonial">Testimonial</a>
+								<a href="/#faq">FAQ</a>
+								<a href="#" class="d-inline-block btn btn-success p-2 ms-4 mt-3 text-white ">Register</a>
+							 </div>
+							 <div class="d-inline pt-5">
+								<div class="container-fluid d-inline px-1 " style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+							 </div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row ps-sm-5 ps-4 position">
+				<div class="col-md-6">
+					<h1 class="fw-bolder mb-5">Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</h1>
+					<div class="col-9">
+						<p>
+							Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhan untuk sewa mobil selama 24 jam.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img class="scale img-fluid" src="img/car.png" alt="car">
+				</div>
+			</div>
+		</header>
+		
+		<section id="form-cars" class="position-relative d-flex justify-content-center">
+			<div class="w-75 py-4 px-3 bg-white rounded-3 shadow-lg">
+				<form id="form" onsubmit="handleSubmitSearchCars(event)" class="row d-flex justify-content-sm-end">
+					<div class="col-sm ms-sm-2 pe-sm-0">
+						<label class="form-label">Tipe Driver</label>
+						<select id="tipeDriver" class="shadow-none form-select form-select-sm text-secondary text-opacity-75 input" name="tipeDriver" aria-label=".form-select-sm example" required>
+							<option class="text-dark" value=""><span class="text-warning">Pilih Tipe Driver</span></option>
+							<option class="text-dark" value="true">Dengan Sopir</option>
+							<option class="text-dark" value="false">Tanpa Sopir (Lepas Kunci)</option>
+						</select>
+					</div>
+					<div class="col-sm pe-sm-0">
+						<label for="tanggal" class="form-label">Tanggal</label>
+						<input type="tanggal" name="tanggal" id="tanggal" class="shadow-none form-control text-secondary text-opacity-75 fi-calendar input" placeholder="Pilih Tanggal" style="font-size:12px;" required>
+					</div>
+					<div class="col-sm mb-2 pe-sm-0">
+						<label class="form-label">Waktu Jemput</label>
+						<select class="shadow-none form-select form-select-sm text-secondary text-opacity-75 fi-clock input" name="waktuJemput" id="waktuJemput" required>
+							<option class="" value="">Pilih Waktu</option>
+							<option class="text-dark" value="08:00">08.00 WIB</option>
+							<option class="text-dark" value="09:00">09.00 WIB</option>
+							<option class="text-dark" value="10:00">10.00 WIB</option>
+							<option class="text-dark" value="11:00">11.00 WIB</option>
+							<option class="text-dark" value="12:00">12.00 WIB</option>
+						</select>
+					</div>
+					<div class="col-sm mb-2">
+						<label class="form-label" for="jumlahPenumpang">Jumlah Penumpang (optional)</label>
+						<input type="text" name="jumlahPenumpang" id="jumlahPenumpang" class="shadow-none form-control text-secondary text-opacity-75 rounded-1 input fi-users" placeholder="Jumlah Penumpang" style="font-size:12px;">
+					</div>
+					<div class="col-sm align-self-center d-sm-block d-flex justify-content-center mt-3">
+						<button type="submit" class="btn btn-success">Cari Mobil</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+		<section class="position-relative w-75 mx-auto">
+			<div id="search-list" class="row">
+				
+			</div>
+		</section>
+		
+		<footer id="footer">
+			<div class="row ps-4 px-sm-5 mx-sm-5" style="margin-top: 100px;">
+				<div class="col-md-4 pb-3">
+					<p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+					<p>binarcarrental@gmail.com</p>
+					<p>081-233-334-808</p>
+				</div>
+				<div class="col-md-2 pb-3">
+					<a class="text-decoration-none text-dark" href="#our-services">
+						<p class="d-block pb-1 scale">Our Services</p>
+					</a> 
+					<a href="#why-us" class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">Why Us</p>
+					</a> 
+					<a href="#testimonial" class="text-decoration-none text-dark"class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">Testimonial</p>
+					</a> 
+					<a href="#faq" class="text-decoration-none text-dark">
+						<p class="d-block pb-1 scale">FAQ</p>
+					</a> 
+				</div>
+				<div class="col-md-4 pb-3">
+					<p>Connect With Us</p>
+					<a href="#" class="pe-3"><img class="scale2" src="img/fb.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/ig.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/twitter.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/mail.svg" alt=""></a>
+					<a href="#" class="pe-3"><img class="scale2" src="img/twitch.svg" alt=""></a>
+				</div>
+				<div class="col-md-2 pb-3">
+					<p>Copyright Binar 2022</p>
+					<a href="#header" class="btn btn-primary scale"></a>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+
+	<script>
+		$('#tanggal').datepicker({
+			 uiLibrary: 'bootstrap5'
+		});
+   </script>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/car.js"></script>
+	<script src="scripts/search.js"></script>
+
+</body>
+</html>
