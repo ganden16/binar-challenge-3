@@ -10,6 +10,12 @@ function closeNav() {
 const inputs = document.querySelectorAll('.input')
 const focusForm = document.getElementById('focus-form')
 
+inputs[3].addEventListener('keypress',(e) => {
+	if(e.code == "Enter" || e.keyCode == 13){
+		inputs[3].blur()
+	}
+})
+
 inputs.forEach(input => {
 	input.addEventListener('focusin', (e) => {
 		setTimeout(() => {
@@ -22,11 +28,3 @@ inputs.forEach(input => {
 		}, 200)
 	})
 })
-
-
-
-
-
-
-
-
